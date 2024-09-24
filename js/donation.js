@@ -21,6 +21,17 @@ donationNow.addEventListener('click',function(){
         const donationh1=document.getElementById('donation_h1').innerText;
         const inputValueDicres=bdtDonationValue-inputValueNumber;
        document.getElementById('bdt-donation').innerText=inputValueDicres;
+         // set hiestroy part
+         const card=document.createElement('card');
+         card.innerHTML+=`
+            <div class="card bg-base-100 shadow-xl border-2 mb-7">
+          <div class="card-body ">
+           <h1 class="text-3xl font-bold">${inputValueShow.innerText} Taka Donation for ${donationh1}</h1>
+           <p class="text-xl font-normal">${Date()}</p>
+          </div>
+        </div>
+         `
+          document.getElementById('creat-card').appendChild(card);
     }
     
 })
@@ -38,6 +49,18 @@ donationNow2.addEventListener('click', function(){
     inputValueShow2.innerText=inputValue2;
     const inputValueDicres2=bdtDonationValue-inputValue2;
     document.getElementById('bdt-donation').innerText=inputValueDicres2;
+    const donationh2 =document.getElementById('donation_h2').innerText;
+      // set hiestroy part
+     const card=document.createElement('card');
+     card.innerHTML+=`
+        <div class="card bg-base-100 shadow-xl border-2 mb-7">
+      <div class="card-body ">
+       <h1>vali${inputValueShow2.innerText}Taka Donation for ${donationh2}</h1>
+       <p class="text-xl font-normal">${Date()}</p>
+      </div>
+    </div>
+     `
+      document.getElementById('creat-card').appendChild(card);
     }
 })
 donationNow3.addEventListener('click', function(){
@@ -54,11 +77,18 @@ donationNow3.addEventListener('click', function(){
         inputValueShow3.innerText=inputValue3;
         const inputValueDicres3=bdtDonationValue-inputValue3;
         document.getElementById('bdt-donation').innerText=inputValueDicres3;
+        const donationh3=document.getElementById('donation_h3').innerText;
+        // set hiestroy part
+        const card=document.createElement('card');
+        card.innerHTML+=`
+           <div class="card bg-base-100 shadow-xl border-2 mb-7">
+         <div class="card-body ">
+          <h1>vali${inputValueShow3.innerText}Taka Donation for ${donationh3}</h1>
+          <p class="text-xl font-normal">${Date()}</p>
+         </div>
+       </div>
+        `
+         document.getElementById('creat-card').appendChild(card);
     }
 
 })
-
-// document.getElementById('donaton-btn').addEventListener('click', function(event){
-//     event.target._blank=window.location.href='/index.html';
-    
-// })

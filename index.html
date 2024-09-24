@@ -31,7 +31,7 @@
   <section class=" mt-0 fixed w-full z-50 top-0">
     <div class="w-11/12 mx-auto navbar bg-nav-color mt-10">
       <div class="navbar-start">
-        <a id="pustion_field" onclick="qustion()" class=" bg-bg-color btn btn-lg hover:bg-purple-300 transition-all ease-linear text-3xl font-medium ml-48  text-center rounded-xl">Blog</a>
+        <a id="pustion_field" onclick="qustion()" class=" bg-bg-color btn btn-lg transition-all ease-linear text-3xl font-medium ml-48  text-center rounded-xl">Blog</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 justify-center items-center">
@@ -49,14 +49,14 @@
     </div>
     <section>
       <div class="flex justify-center items-center gap-8 mt-20">
-        <button id="donaton-btn" class="text-3xl py-4 px-3 bg-bg-color rounded-xl">Donation</button>
-        <button id="history_btn" class="text-3xl py-4 px-3 bg-bg-color rounded-xl">History</button>
+        <button id="donaton-btn" class="text-3xl btn btn-lg hover:bg-bg-color  rounded-xl">Donation</button>
+        <button id="history_btn" class="text-3xl btn btn-lg hover:bg-bg-color  rounded-xl">History</button>
 
       </div>
     </section>
   </section>
 
-  <section class="mt-80" id="section">
+  <section  class="mt-80 " id="section-1">
     <div class="hero border border-solid w-[1140px] mx-auto rounded-xl">
       <div class="hero-content flex-col lg:flex-row jus">
         <img src="./imges/noakhali.png" alt="" srcset="">
@@ -103,7 +103,7 @@
               <span class="ml-3 font-normal text-xl text-dnt-color">BDT</span>
             </p>
           </button>
-          <h1 class="text-2xl font-bold mt-2">Donate for Flood at Noakhali, Bangladesh</h1>
+          <h1 id="donation_h2" class="text-2xl font-bold mt-2">Donate for Flood at Noakhali, Bangladesh</h1>
           <p class="font-normal text-xl py-1">
             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
             help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
@@ -138,7 +138,7 @@
               <span class="ml-3 font-normal text-xl text-dnt-color">BDT</span>
             </p>
           </button>
-          <h1 class="text-2xl font-bold mt-2">Donate for Flood at Noakhali, Bangladesh</h1>
+          <h1 id="donation_h3" class="text-2xl font-bold mt-2">Donate for Flood at Noakhali, Bangladesh</h1>
           <p class="font-normal text-xl py-1">
             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
             help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
@@ -151,10 +151,13 @@
       </div>
     </div>
   </section>
+  <section id="section-02" class="hidden container mx-auto mt-80 ">
+    <div id="creat-card"></div>
+  </section>
   <script src="/js/utilitis.js"></script>
   <script src="./js/donation.js"></script>
   <script src="/js/qustion.js"></script>
-  <script src="/js/history.js"></script>
+  <script src="/js/hidden.js"></script>
 </body>
 
 </html>
